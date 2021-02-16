@@ -35,3 +35,33 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+### Table
+| Header 1 | Header 2|
+| -------- | ------- |
+| row 1    | row 1   |
+| row 2    | row 2   |
+
+### Graphviz
+
+Requires the [Graphviz Markdown Preview extension](https://marketplace.visualstudio.com/items?itemName=geeklearningio.graphviz-markdown-preview)
+
+```graphviz
+digraph {
+    rankdir=LR
+    node [shape=record]
+    root[label="Caching Patterns"]
+
+    root -> subgraph read_cache {
+        pattern_r1[label="read aside"]
+        pattern_r2[label="read through"]
+    } [tailport=e, headport=w]
+
+    root -> subgraph write_cache {
+        pattern_w1[label="write through"]
+        pattern_w2[label="write behind cache"]
+    } [tailport=e, headport=w]
+
+}
+
+```
