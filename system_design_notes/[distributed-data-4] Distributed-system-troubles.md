@@ -38,3 +38,28 @@ __Designing Data-Intensive Applications__ Chapter 8 and miscellaneous notes
 ## Process Pauses
 
 ## Knowledge, Truth, and Lies
+### The Truth Is Defined by the Majority
+* Fencing tokens
+  * Protect against expired locks (due to long pause from GC etc.)
+
+### Byzantine Faults
+* Untrusting environment besides aforementioned faults
+
+### System Model and Reality
+* Timing assumptions
+  * Synchronous model
+    * Assume _bounded_ network delay, _bounded_ process pauses, and _bounded_ clock error
+    * NOT a realistic mode
+  * Partially synchronous model
+    * Behaves like a synchronous system _most of the time_, but sometimes exceeds the bounds
+    * A realistic model of many real systems
+  * Asynchronous model
+    * Make NO timing assumptions (e.g. no timeouts)
+    * Most restrictive
+* Modeling faults
+  * Crash-stop faults
+    * Fault => crash
+  * Crash-recovery faults
+    * Crash, and possible restart, after some unknown time
+  * Byzantine (arbitrary) faults
+    * A node can do anything, including trying to trick and deceive other nodes
