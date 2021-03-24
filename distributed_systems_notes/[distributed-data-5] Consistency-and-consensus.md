@@ -13,7 +13,7 @@ __Designing Data-Intensive Applications__ Chapter 9 and miscellaneous notes
     * [Wikipedia](https://en.wikipedia.org/wiki/Linearizability#Definition_of_linearizability)
     * [Original paper](https://cs.brown.edu/~mph/HerlihyW90/p463-herlihy.pdf)
 * Linearizability vs serializability
-  * A database may provide _both_ (so they are two different guarentees)
+  * A database may provide _both_ (so they are two different guarantees)
     * aka __strict serializability__ or __strong one-copy serializability__(strong-1SR)
   * Linearizability of serializability implementations
     * Actual serial execution and 2PL - typically also linearizable

@@ -8,11 +8,11 @@
 * TCP functionality
   * A reliable stream deliver service which guarantees the bytes sent and received will be
     * identical
-      * package properly checksumed
+      * package properly checksum-ed
     * in the same order
       * package has sequence number for ordering
   * Flow control
-    * Limits the rate a sender tranfers data to guarantee reliable delivery
+    * Limits the rate a sender transfers data to guarantee reliable delivery
   * [Congestion control](https://en.wikipedia.org/wiki/TCP_congestion_control)
 
 * Why three-way handshake
@@ -44,7 +44,7 @@
 * [Open Shortest Path First (OSPF)](https://en.wikipedia.org/wiki/Open_Shortest_Path_First)
   * a kind of interior gateway protocols (IGP)
 * [Border Gateway Protocol (BGP)](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)
-  * a kind of exterior gateway protocal
+  * a kind of exterior gateway protocol
 
 ## What happens when you type an URL in the browser and press enter
 
@@ -52,7 +52,7 @@
 
 ### Outline
 1. DNS resolution
-   * Browswer cache
+   * Browser cache
    * OS cache
      * e.g. On mac, use the command
         ```bash
@@ -62,17 +62,17 @@
    * ISP cache
    * ISP's DNS server initiates a DNS query
 
-2. The browswer initiates a TCP connection with the server
+2. The browser initiates a TCP connection with the server
    * TCP/IP three-way handshake
      1. Client machine sends a `SYN` packet
      2. Server responds a `SYN/ACK` packet (if it allows a connection)
      3. Client acknowledge by sending an `ACK` packet.
 
-3. The browswer sends an HTTP request to the server
+3. The browser sends an HTTP request to the server
 
 4. The server handles the request and sends back an HTTP response
 
-5. Browswer parses and renders the HTML content (or initiates other actions based on HTTP response)
+5. Browser parses and renders the HTML content (or initiates other actions based on HTTP response)
    
 <br><br>
 

@@ -21,7 +21,7 @@ __Designing Data-Intensive Applications__ Chapter 6 and miscellaneous notes
   * Examples: MongoDB, Riak, Cassandra, Elasticsearch, SolrCloud
 * Partitioning secondary indexes by term
   * Use partitioned global index (and can be partitioned differently from the primary key)
-  * Reads are more efficient, but writes are slower and more complicatedf
+  * Reads are more efficient, but writes are slower and more complicated
     * Thus updates to global secondary indexes are often asynchronous
   * Examples: Amazon DynamoDB, Riak's search feature, Oracle data warehouse
 

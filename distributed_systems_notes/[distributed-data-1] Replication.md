@@ -11,7 +11,7 @@ handle changes to replicated data
 
 ## Leaders and Followers
 ### Synchronous vs asynchronous
-  * All followers being synchronous is in practical
+  * All followers being synchronous is not practical
   * Synchronous usually means _semi-synchronous_: one follower is kept synchronous, and the others are asynchronous
   * Often leader-based replication is completely asynchronous
 
